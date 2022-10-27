@@ -1,6 +1,5 @@
-const button = function( button ) 
+export default function( button ) 
 {
-
     /* 
      * methods
      */
@@ -8,21 +7,18 @@ const button = function( button )
     {
         button.disabled = false;
     }
-    
 
 
     function disable()
     {
         button.disabled = true;
     }
-    
 
 
     function click()
     {
         button.dispatchEvent( new Event('click') );
     }
-    
 
 
     /* 
@@ -32,7 +28,6 @@ const button = function( button )
     {
         throw new TypeError('element is not a button');
     }
-    
 
 
     /* 
