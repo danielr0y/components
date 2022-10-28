@@ -1,12 +1,20 @@
 {
   "name": "@weareva/button",
   "version": "1.0.0",
-  "description": "",
   "main": "button.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": "html button element wrapper",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielr0y/components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danielr0y/components/issues"
+  },
+  "homepage": "https://github.com/danielr0y/components#readme"
 }
