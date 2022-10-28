@@ -1,0 +1,20 @@
+{
+  "name": "@weareva/components",
+  "version": "1.0.0",
+  "description": "html element wrappers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielr0y/components.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielr0y/components/issues"
+  },
+  "homepage": "https://github.com/danielr0y/components#readme"
+}
