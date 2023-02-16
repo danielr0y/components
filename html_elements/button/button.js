@@ -1,4 +1,7 @@
-export default function( button ) 
+const button = function( 
+    button,
+    hideClassName 
+) 
 {
     /* 
      * methods
@@ -7,18 +10,35 @@ export default function( button )
     {
         button.disabled = false;
     }
+    
 
 
     function disable()
     {
         button.disabled = true;
     }
+    
+
+
+    function hide()
+    {
+        button.classList.add(hideClassName);
+    }
+    
+
+
+    function show()
+    {
+        button.classList.remove(hideClassName);
+    }
+    
 
 
     function click()
     {
         button.dispatchEvent( new Event('click') );
     }
+    
 
 
     /* 
@@ -28,6 +48,12 @@ export default function( button )
     {
         throw new TypeError('element is not a button');
     }
+    
+    if ( typeof hideClassName !== 'string')
+    {
+        throw new TypeError('hideClassName is not a string');
+    }
+    
 
 
     /* 
@@ -36,6 +62,8 @@ export default function( button )
     return {
         enable,
         disable,
+        show,
+        hide,
         click
     };
 };
